@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(206, 206, 206);
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav  li a:hover {
+    background-color: rgb(255, 255, 255);
+  }
+
+h1, h2 {
+    text-align: center;
+}
+
+
+
+
+
+article {
+    float: left;
+    padding: 20px 20px 20px 20px;
+    width: 100%;
+    display:inline-block;  
+  }
+  aside {
+    padding: 0px;
+    text-align: right;
+    display: inline-block;
+    float: right;
+    width: 20%;
+    
+  }
+  .main{
+    float: left;
+    width: 70%;
+  }
+
+  .footer{
+    
+    bottom:0; 
+    display:block ;
+    margin: 20px;
+ 
+
+}
+
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+#ad-container {width:100%;}
+#ad-container img {border:0; width: 100%; height: auto;}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+ @media only screen and (max-width: 620px) {
+    main, nav, article, .main, aside, footer {
+      width: 100%;
+      height: auto;
+    }
+  }
+
