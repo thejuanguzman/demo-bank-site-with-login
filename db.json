@@ -1,0 +1,8 @@
+{
+    "transactions": [ 
+        { "id": 1, "date": "4/22/2021", "description": "debit", "amount": 50.00 },
+        { "id": 2, "date": "4/23/2021", "description": "debit", "amount": 50.00 },
+        { "id": 3, "date": "4/24/2021", "description": "debit", "amount": 50.00 },
+        { "id": 4, "date": "4/25/2021", "description": "credit", "amount": 20.00 }
+    ]
+}

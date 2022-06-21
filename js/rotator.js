@@ -19,7 +19,11 @@ setTimeout("ShowBanners()",5000)
 }
 }
 
-
+window.onload = function() {
+    $("apply").onclick = processEntries;
+    $("reset_form").onclick = resetForm;    
+    $("email_address").focus();
+};
 
 // this is the example from the class for testing
 // var banner = [

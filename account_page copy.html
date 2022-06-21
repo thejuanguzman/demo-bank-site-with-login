@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Account</title>
+
+<link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <body>
+        <header>
+            <h1>Titan Community Bank</h1>
+            <h2>User accounts page</h2>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li id="spending"><a href="spendingtrends.html">Spendin Trends</a></li>
+                    <li id="accountPage"><a href="account_page.html">Account Page</a></li>
+                    <li><a href="login.html">Login/Out</a></li>
+                    <li><a href="account_registration.html">Account Registration</a></li>
+                    <li><a href="loans.html">Prequalify for Financing</a></li>
+                    <li><a href="#">Conact Us</a></li>
+                </ul>
+            </nav>
+        </section>
+    
+        <section class="main">
+    
+            <article>
+                
+                <form action="account_page.html" method="get" name="transactionsForm" id="transactionsForm">
+    
+                    <label for="description">Deposit/Withdraw Description</label>
+                        <input type="text" name="description" id="description">
+                        <span>Optional but recommended</span><br>
+                    
+                    <!-- <label for="type">Add Transaction - "Debit or Credit"</label>
+                        <input type="text" name="type" id="type">
+                        <span>*</span><br> -->
+                    
+    
+                    <label for="type">amount</label>
+                        <input type="number" name="amount" id="amount" value="0" required>
+                        <span>*Required</span><br>
+                    
+            
+                    <!-- <input type="button" id="update" value="Add Transaction"><BR> -->
+                    <input type="button" id="deposit" value="DEPOSIT"><input type="button" id="withdraw" value="WITHDRAW"> 
+                    
+                    
+                </form>
+                <p>*Click DEPOSIT when adding money to your account.</p>
+                <p>*Click WITHDRAW when taking money out or making a purchase.</p>
+
+                <!-- <form action="account_page.html" method="get" name="transactionsForm" id="transactionsForm">
+    
+                    <label for="description">Transaction Description</label>
+                        <input type="text" name="description" id="description">
+                        <span>*</span><br>
+                    
+                    <label for="type">Add Transaction - "Debit or Credit"</label>
+                        <input type="text" name="type" id="type">
+                        <span>*</span><br>
+                    
+    
+                    <label for="type">amount</label>
+                        <input type="number" name="amount" id="amount" value="0" >
+                        <span>*</span><br>
+                    
+            
+                    <input type="button" id="update" value="Add Transaction"><BR>
+                    <input type="button" id="deposit" value="Deposit"><input type="button" id="withdraw" value="Withdraw"> 
+                    
+                    
+                </form> -->
+    
+                <!-- <form action="account_page.html" method="get" name="transactionsForm" id="transactionsForm">
+    
+                    <label for="email_address">Email Address</label>
+                        <input type="text" name="email_address" id="email_address">
+                        <span>*</span><br>
+                    
+                    <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                        <span>*</span><br>
+                    
+                               
+                    <br>
+    
+                    <label for="resetPassword">Enter New Password</label>
+                        <input type="password" name="resetPassword" id="resetPassword">
+                        <span>*</span><br>
+                    
+            
+                    <input type="button" id="login" value="Reset Password">
+                    
+                    
+                </form> -->
+
+                <h2 id="registration_header">&nbsp;</h2>
+                <table class="transactionTables">
+                    <tr>
+                        <td class="transactionTables">TRANSACTION</td>
+                        <td class="transactionTables">DEBIT/CREDIT</td>
+                        <td class="transactionTables">AMOUNT</td>
+                        <td class="transactionTables">DATE</td>
+                      </tr>
+                </table>
+                <table class="transactionTables" id="registration_info"></table>
+                <BR>
+                <table class="transactionTables">
+                    <tr>
+                        <td class="transactionTables">Account Balance</td>
+                      </tr>
+                </table>
+                <table class="transactionTables" id="accountTotalTable"></table>
+    
+               
+            </article>
+            
+        </section>
+    
+        <section class="sidebar">
+            <aside>
+                <div id="ad-container">
+                    <!-- this image and message are only visible if JS is turned off -->
+                    <img src="images/image1.jpg">
+                    
+                   </div>
+            </aside> 
+        </section>
+      
+        <section class="footer">
+            <footer> &copy; Copyright 2022 Titan Community Bank</footer >
+        </section>
+        <script src="js/loggincheck.js" ></script>
+        <script src="js/transactions.js" ></script>
+        <!-- <script src="js/spending-graph.js" ></script> -->
+</body>
+</html>

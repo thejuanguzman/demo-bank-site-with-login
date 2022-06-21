@@ -36,7 +36,7 @@ h1, h2 {
 
 article {
     float: left;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 80px 20px;
     width: 100%;
     display:inline-block;  
   }
@@ -62,6 +62,39 @@ article {
 
 }
 
+#application_form span {
+  color: red;
+}
+
+label {
+  float: left;
+  width: 15em;
+}
+input, select {
+  width: 10em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+input[type="checkbox"],[type="radio"] {
+  width: 1em;
+}
+#application_info span {
+  color: red;
+}
+td {
+width: 9em;	
+BORDER-BOTTOM: SOLID 1PX BLACK;
+VERTICAL-ALIGN: baseline;
+padding-top: 15PX;
+
+
+}
+
+.transactionTables {
+  
+  text-align: left;
+}
+
 /* Clear floats after the columns */
 section::after {
     content: "";
@@ -80,3 +113,21 @@ section::after {
     }
   }
 
+.bars{
+   /* control the speed of animation of this element */
+   transition: all 3s ease; 
+  
+    
+  }
+
+  /* .bars:hover{
+    border: 1px solid black;
+    background-color: lightblue;
+    width: 270px;
+    height: 100px;
+    overflow: auto;
+    transition: all 2s;
+    
+      
+    } */
+  

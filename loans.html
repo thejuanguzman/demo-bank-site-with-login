@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <title>Titan Community Bank</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="ShowBanners()">
+    <header>
+        <h1>Titan Community Bank</h1>
+        <h2>Prequalify for Financing</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li id="spending"><a href="spendingtrends.html">Spendin Trends</a></li>
+                <li id="accountPage"><a href="account_page.html">Account Page</a></li>
+                <li><a href="login.html">Login/Out</a></li>
+                <li><a href="account_registration.html">Account Registration</a></li>
+                <li><a href="loans.html">Prequalify for Financing</a></li>
+                <li><a href="#">Conact Us</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="main">
+
+        <article>
+
+            <form action="apply_for_loan.html" method="get" name="application_form" id="application_form">
+    
+                <label for="email_address">Email Address</label>
+                    <input type="text" name="email_address" id="email_address">
+                    <span>*</span><br>
+
+                <label for="re_enter_email">Re-enter Email Address</label>
+                    <input type="text" name="re_enter_email" id="re_enter_email">
+                    <span>*</span><br>
+                
+                <label for="first_name">First Name</label>
+                    <input type="text" name="first_name" id="first_name">
+                    <span>*</span><br>
+                
+                <label for="last_name">Last Name</label>
+                    <input type="text" name="last_name" id="last_name">
+                    <span>*</span><br>
+                    
+                <label for="city">City</label>
+                    <input type="text" name="city" id="city">
+                    <span>*</span><br>
+
+                <label for="state">State</label>
+                    <input type="text" name="state" id="state">
+                    <span>*</span><br>
+
+                <label for="zip_code">ZIP Code</label>
+                    <input type="text" name="zip_code" id="zip_code">
+                    <span>*</span><br>
+
+                <label for="gross_income">Gross Income</label>
+                    <input type="text" name="gross_income" id="gross_income">
+                    <span>*</span><br>
+
+                <label for="social">Last 4 digits of SSN</label>
+                    <input type="text" name="social" id="social">
+                    <span>*</span><br>
+                <br>
+                <label>
+                </label>
+                    <input type="checkbox" name="terms" id="terms" value="yes">This prequalification request serves as my written instruction to Titan Community Bank to obtain a “soft inquiry” about my credit information,
+                    which won’t affect my credit score. I agree that TCB can send me an email confirming my request.
+                    <span>*</span><br><BR>
+        
+                <input type="button" id="apply" value="Apply">
+                <input type="button" id="reset_form" value="Reset">
+            </form>
+
+            <h2 id="application_header">&nbsp;</h2>
+            <table id="application_info"></table>
+
+
+           
+        </article>
+        
+    </section>
+
+    <section class="sidebar">
+        <aside>
+            <div id="ad-container">
+                <!-- this image and message are only visible if JS is turned off -->
+                <img src="images/image1.jpg">
+                
+               </div>
+        </aside> 
+    </section>
+  
+    <section class="footer">
+        <footer> &copy; Copyright 2022 Titan Community Bank</footer >
+    </section>
+
+
+<script src="js/loggincheck.js" ></script>
+<script src="js/prequalify.js" ></script>
+
+</body>
+
